@@ -180,13 +180,14 @@ const App: React.FC = () => {
       <button
         style={{ fontSize: "20px" }}
         onClick={() => {
+          if (running) return;
           setGrid(generateEmptyGrid());
           setGrid(generateRandomGrid());
-          runningButton.current.click(); // runSimulation();
+          runningButton.current.click();
           for (let i = 0; i < 5; i++) {
             setTimeout(function () {
               getScreenshot();
-            }, i * 2500);
+            }, i * 2000);
           }
         }}
       >
