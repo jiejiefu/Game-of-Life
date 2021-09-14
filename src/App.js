@@ -6,8 +6,8 @@ import html2canvas from "html2canvas";
 // import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 
-const numRows = 35;
-const numCols = 75;
+const numRows = 28;
+const numCols = 63;
 
 const operations = [
   [0, 1],
